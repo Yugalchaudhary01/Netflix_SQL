@@ -71,13 +71,17 @@ ORDER BY release_year;
 ```
 ![image alt](https://github.com/Yugalchaudhary01/Screenshots/blob/main/Screenshot%202024-09-28%20at%205.57.39%20PM.png)
 
-## --What are titles with the highest TMDB popularity?
+## --What are the titles and their respective IMDB scores that have a score higher than the average score across all titles?
+ 
 
 ```PostgreSQL
-SELECT title, tmdb_popularity
+WITH avg_score AS (
+    SELECT AVG(imdb_score) AS average_imdb_score
+    FROM titles
+)
+SELECT title, imdb_score
 FROM titles
-ORDER BY tmdb_popularity DESC
-LIMIT 5;
+WHERE imdb_score > (SELECT average_imdb_score FROM avg_score);
 ```
 ![image alt]
 
