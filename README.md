@@ -85,6 +85,16 @@ WHERE imdb_score > (SELECT average_imdb_score FROM avg_score);
 ```
 ![image alt](https://github.com/Yugalchaudhary01/Screenshots/blob/main/Screenshot%202024-09-28%20at%206.46.21%20PM.png)
 
+## --What is the average runtime of titles by age certification and genre?
+
+```PostgreSQL
+SELECT age_certification, genres, AVG(runtime) AS average_runtime
+FROM titles
+WHERE runtime IS NOT NULL
+GROUP BY age_certification, genres
+ORDER BY age_certification, average_runtime DESC;
+```
+
 
 
 
