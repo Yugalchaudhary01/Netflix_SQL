@@ -56,5 +56,9 @@ ORDER BY imdb_score DESC
 LIMIT 10
 ```
 
+Results 
+
+![image alt](https://github.com/Yugalchaudhary01/Screenshots/blob/main/Screenshot%202024-09-28%20at%205.37.39%20PM.png)
+
 
 
