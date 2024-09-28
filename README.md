@@ -39,6 +39,8 @@ LIMIT 10;
 
 Results
 
+![image alt](https://github.com/Yugalchaudhary01/Netflix_SQL/blob/main/Screenshot%202024-09-28%20at%204.54.52%20PM.png)
+
 
 
 
