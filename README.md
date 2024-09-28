@@ -106,7 +106,7 @@ GROUP BY age_certification
 ORDER BY average_runtime DESC
 LIMIT 1;
 ```
-![image alt]
+![image alt](https://github.com/Yugalchaudhary01/Screenshots/blob/main/Screenshot%202024-09-28%20at%206.53.16%20PM.png)
 
 
 
