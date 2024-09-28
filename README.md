@@ -96,6 +96,17 @@ ORDER BY age_certification, average_runtime DESC;
 ```
 ![image alt](https://github.com/Yugalchaudhary01/Screenshots/blob/main/Screenshot%202024-09-28%20at%206.49.46%20PM.png)
 
+## --Which age certification has the highest average runtime?
+
+```PostgreSQL
+SELECT age_certification, AVG(runtime) AS average_runtime
+FROM titles
+WHERE runtime IS NOT NULL
+GROUP BY age_certification
+ORDER BY average_runtime DESC
+LIMIT 1;
+```
+![image alt]
 
 
 
