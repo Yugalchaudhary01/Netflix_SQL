@@ -29,7 +29,7 @@ Data Analysis: SQL queries facilitated the exploration and extraction of insight
 ## Questions I created and Answered:
 
 ## What are the top 10 countries with the most titles produced, and how many titles do they have?
-```mysql
+```PostgreSQL
 SELECT production_countries, COUNT(*) AS title_count
 FROM titles
 GROUP BY production_countries
@@ -43,6 +43,18 @@ Results
 
 
 
+## --What are top 10 movies according to IMDB score?
+
+```PostgreSQL
+SELECT title, 
+type, 
+imdb_score
+FROM titles
+WHERE imdb_score >= 7.4
+AND type = 'MOVIE'
+ORDER BY imdb_score DESC
+LIMIT 10
+```
 
 
 
