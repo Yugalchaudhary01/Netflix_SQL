@@ -71,6 +71,15 @@ ORDER BY release_year;
 ```
 ![image alt](https://github.com/Yugalchaudhary01/Screenshots/blob/main/Screenshot%202024-09-28%20at%205.57.39%20PM.png)
 
+## --What are titles with the highest TMDB popularity?
+
+```PostgreSQL
+SELECT title, tmdb_popularity
+FROM titles
+ORDER BY tmdb_popularity DESC
+LIMIT 5;
+```
+![image alt]
 
 
 
