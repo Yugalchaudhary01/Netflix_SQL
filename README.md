@@ -108,7 +108,7 @@ LIMIT 1;
 ```
 ![image alt](https://github.com/Yugalchaudhary01/Screenshots/blob/main/Screenshot%202024-09-28%20at%206.53.16%20PM.png)
 
-## ----What is the maximum, minimum, and average runtime of titles released each year?
+## --What is the maximum, minimum, and average runtime of titles released each year?
 
 ```PostgreSQL
 SELECT release_year, 
@@ -121,5 +121,15 @@ GROUP BY release_year
 ORDER BY release_year;
 ```
 ![image alt](https://github.com/Yugalchaudhary01/Screenshots/blob/main/Screenshot%202024-09-28%20at%206.59.53%20PM.png)
+
+## --Calculate the total number of titles released each year, alongside the average IMDb score for those years.
+
+```PostgreSQL
+SELECT release_year, COUNT(*) AS title_count, AVG(imdb_score) AS average_imdb_score
+FROM titles
+GROUP BY release_year
+ORDER BY release_year;
+```
+
 
 
