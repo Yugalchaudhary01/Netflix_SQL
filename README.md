@@ -108,5 +108,18 @@ LIMIT 1;
 ```
 ![image alt](https://github.com/Yugalchaudhary01/Screenshots/blob/main/Screenshot%202024-09-28%20at%206.53.16%20PM.png)
 
+## ----What is the maximum, minimum, and average runtime of titles released each year?
+
+```PostgreSQL
+SELECT release_year, 
+   MAX(runtime) AS max_runtime, 
+   MIN(runtime) AS min_runtime, 
+   AVG(runtime) AS average_runtime
+FROM titles
+WHERE runtime IS NOT NULL
+GROUP BY release_year
+ORDER BY release_year;
+```
+
 
 
