@@ -61,4 +61,16 @@ Results
 ![image alt](https://github.com/Yugalchaudhary01/Screenshots/blob/main/Screenshot%202024-09-28%20at%205.37.39%20PM.png)
 
 
+## --What are the titles released after a specific year 2000?
+```SELECT title, release_year
+FROM titles
+WHERE release_year > 2000
+ORDER BY release_year;
+```
+![image alt]
+
+
+
+
+
 
