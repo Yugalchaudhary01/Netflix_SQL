@@ -131,5 +131,5 @@ GROUP BY release_year
 ORDER BY release_year;
 ```
 
-
+![image alt](https://github.com/Yugalchaudhary01/Screenshots/blob/main/Screenshot%202024-09-28%20at%207.02.59%20PM.png)
 
