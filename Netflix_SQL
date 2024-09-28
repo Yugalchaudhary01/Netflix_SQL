@@ -1,0 +1,39 @@
+ What were the top 10 movies according to IMDB score?
+
+SELECT title, 
+type, 
+imdb_score
+FROM shows_movies.titles
+WHERE imdb_score >= 8.0
+AND type = 'MOVIE'
+ORDER BY imdb_score DESC
+LIMIT 10
+
+What were the bottom 10 movies according to IMDB score? 
+SELECT title, 
+type, 
+imdb_score
+FROM shows_movies.titles
+WHERE type = 'MOVIE'
+ORDER BY imdb_score ASC
+LIMIT 10
+
+What were the bottom 10 shows according to IMDB score? 
+SELECT title, 
+type, 
+imdb_score
+FROM shows_movies.titles
+WHERE type = 'SHOW'
+ORDER BY imdb_score ASC
+LIMIT 10
+
+
+
+
+
+
+
+
+
+
+
