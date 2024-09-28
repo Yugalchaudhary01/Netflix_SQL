@@ -83,7 +83,7 @@ SELECT title, imdb_score
 FROM titles
 WHERE imdb_score > (SELECT average_imdb_score FROM avg_score);
 ```
-![image alt]
+![image alt](https://github.com/Yugalchaudhary01/Screenshots/blob/main/Screenshot%202024-09-28%20at%206.46.21%20PM.png)
 
 
 
