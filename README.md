@@ -120,6 +120,6 @@ WHERE runtime IS NOT NULL
 GROUP BY release_year
 ORDER BY release_year;
 ```
-
+![image alt](https://github.com/Yugalchaudhary01/Screenshots/blob/main/Screenshot%202024-09-28%20at%206.59.53%20PM.png)
 
 
