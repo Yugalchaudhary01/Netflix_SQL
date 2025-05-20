@@ -4,7 +4,7 @@ Netflix SQL Project
 ![Logo](https://akm-img-a-in.tosshub.com/indiatoday/images/story/202012/Netflix-New-Feature-Audio-Only_1200x768.jpeg?size=690:388)
 
 
-In this project, I conducted a thorough analysis of a dataset containing information about various titles, including movies and shows. The dataset encompassed key attributes such as title names, genres, release years, IMDb scores, and more, which provided a rich foundation for exploration.
+In this project, I conducted a thorough analysis of a dataset containing information about various titles, including movies and shows. The dataset encompassed key attributes such as title names, genres, release years, IMDb scores and more which provided a rich foundation for exploration.
 
 Key Steps Undertaken:
 
